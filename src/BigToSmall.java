@@ -6,11 +6,12 @@ public class BigToSmall {
         System.out.println("대문자 <-> 소문자 프로그램");
         System.out.println("영단어 입력: ");
         String word = sc.next();
-
         int length = word.length();
+        String result = "";
+
+        // 변수 설정 ver.
         String large = word.toUpperCase();
         String small = word.toLowerCase();
-        String result = "";
 
         for (int i=0; i<length; i++){
             String ist=word.substring(i,i+1);
@@ -24,5 +25,16 @@ public class BigToSmall {
             }
         }
         System.out.println(result);
+
+        // 변수 미설정 ver.
+//       for (int i=0; i<length; i++){
+//            if (word.substring(i,i+1).equals(word.toUpperCase().substring(i,i+1))) {
+//                result += word.toLowerCase().substring(i,i+1);
+//            }else {
+//                result += word.toUpperCase().substring(i,i+1);
+//            }
+//        }
+//        System.out.println(result);
+        
     }
 }
