@@ -18,7 +18,7 @@ public class While {
 
                 System.out.println("사칙연산 프로그램 시작");
         while(true){
-            boolean isSystemOff = false;
+            // boolean isSystemOff = false;
 
             System.out.println("첫번째 정수 입력");
             int num1 = sc.nextInt();
@@ -30,7 +30,8 @@ public class While {
             int result = 1;
             switch (programNumber){
                 case 0:
-                    isSystemOff = true;
+                    // isSystemOff = true;
+                    System.out.println("프로그램 종료");
                     break;
                 case 1:
                     result = num1 + num2;
@@ -62,10 +63,9 @@ public class While {
                     System.out.println("다시 입력하세요.");
                     break;
             }
-            if (isSystemOff) break;
+            // if (isSystemOff) break;
+            if (programNumber==0) break;
         }
-        System.out.println("프로그램을 종료합니다");
-
 
 
     }
