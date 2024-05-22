@@ -58,7 +58,9 @@ public class Quiz {
                 bus = "마을버스";
                 fare = 1000;
             default:
-                bus = "*오류(버스 노선 종류를 다시 입력해주세요.)";
+                bus = "*오류";
+                System.out.println("버스 노선 종류를 다시 입력해주세요.");
+                break;
         }
 
         System.out.println("나이 입력: ");
