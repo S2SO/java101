@@ -5,7 +5,7 @@ public class BigToSmall {
         Scanner sc = new Scanner(System.in);
         System.out.println("대문자 <-> 소문자 프로그램");
         System.out.println("영단어 입력: ");
-        String word = sc.next();
+        String word = sc.nextLine();
         int length = word.length();
         String result = "";
 
